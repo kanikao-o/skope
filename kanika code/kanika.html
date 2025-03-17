@@ -1,0 +1,1797 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Fusion India</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url('study.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .date {
+            width: 100%;
+            height: 40px;
+            background-color: white;
+        }
+
+        header {
+            background-color: black;
+            width: 100%;
+            height: 80px;
+            position: sticky;
+            top: 0px;
+            z-index: 11;
+
+        }
+
+        header ul li {
+            display: inline-block;
+            list-style: none;
+            color: white;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 10px;
+            padding: 30px 10px 30px 10px;
+        }
+
+        header ul :hover {
+            color: #fdd415;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+
+        header ul {
+            float: right;
+            margin-top: 0px;
+        }
+        .hoi ul li {
+            list-style: none;
+            display: block;
+            margin-bottom: -20px;
+            background-color: #123c64;
+            border: 1px solid black;
+            padding: 15px 80px 30px 20px;
+            font-size: 13px;
+        }
+        
+        header ul li:hover .hoi {
+            display: block;
+            margin-top: 29px;
+            transition: 0.3s ease;
+            opacity: 1;
+            
+        }
+        .hoi {
+            margin-top: 100px;
+            margin-left: -20px;
+            display: none;
+            position: absolute;
+            z-index: 1;
+            opacity: 0;
+
+        }
+        .lliinnee {
+            width: 220px;
+            height: 2px;
+            background-color: #fcd315;
+        }
+        .logo {
+            float: left;
+            margin-left: 90px;
+            margin-top: 5px;
+        }
+
+        .icon {
+            color: rgb(255, 255, 255);
+            float: right;
+            margin-top: 30px;
+            margin-right: 90px;
+        }
+
+        .bi {
+            font-size: 17px;
+            margin-right: 5px;
+
+        }
+
+        .search {
+            color: white;
+            font-size: 20px;
+            margin: 28px 30px 10px 25px;
+            float: right;
+        }
+
+        .search:hover {
+            color: #fdd415;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+
+        .p {
+            float: left;
+            margin: 12px 0px 5px 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        .call {
+            float: left;
+            margin: 12px -45px 0px 70px;
+        }
+
+        .date1 {
+            background-color: white;
+            float: right;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            margin: 10px 120px 0px 0px;
+        }
+
+        .bi2 {
+            color: black;
+            text-decoration: solid;
+            margin-right: 6px;
+        }
+
+        .bi1 {
+            color: #fdd415;
+        }
+
+        .board {
+            width: 100%;
+            height: 500px;
+            background-image: url('mainb.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation-name: board;
+            animation-duration: 60s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes board {
+            0% {
+                background-image: url('k.jpg');
+            }
+
+            10% {
+                background-image: url('k2.jpg');
+            }
+
+            20% {
+                background-image: url('k3.jpg');
+            }
+
+            30% {
+                background-image: url('k4.jpg');
+            }
+
+            40% {
+                background-image: url('k5.png');
+            }
+
+            50% {
+                background-image: url('k6.jpg');
+            }
+
+            60% {
+                background-image: url('k7.jpg');
+            }
+
+            70% {
+                background-image: url('k8.png');
+            }
+
+            80% {
+                background-image: url('k9.jpg');
+            }
+
+            90% {
+                background-image: url('k0.png');
+            }
+
+            100% {
+                background-image: url('k.jpg');
+            }
+        }
+
+        .text {
+            background-color: rgba(255, 255, 255, 0);
+            color: rgb(255, 255, 255);
+            width: 50%;
+            height: 360px;
+            padding: 90px 20px 20px 20px;
+            margin-left: 90px;
+            font-size: 25px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h2 {
+            font-size: 46px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #d3ad06;
+        }
+
+        h3 {
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 60px;
+            color: #002f5b;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            margin-top: 10px;
+
+        }
+
+        .button1 {
+            background-color: #002f5b;
+            display: inline-block;
+            padding: 10px 40px 10px 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 6px;
+            margin-top: 50px;
+            color: white;
+            cursor: pointer;
+
+        }
+        .button1:hover {
+            background-color: #fcd315;
+            color: #123c64;
+            transition: 0.4s ease;
+        }
+
+        .button2 {
+            background-color: #fcd315;
+            display: inline-block;
+            padding: 10px 40px 10px 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 6px;
+            margin-top: 50px;
+            color: #002f5b;
+            cursor: pointer;
+        }
+
+        .mmain {
+            width: 100%;
+            height: 250px;
+            text-align: center;
+            background-color: rgb(241, 241, 241);
+            padding-top: 80px;
+        }
+
+        .welcome {
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 10px;
+            color: #002f5b;
+            font-weight: 600;
+        }
+
+        .m1 {
+            width: 84%;
+            height: 280px;
+            margin: auto;
+        }
+
+        .m {
+            margin-top: 40px;
+            line-height: 1.6;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 370px;
+            grid-template-rows: 230px 260px;
+            grid-template-areas: "image" "text";
+            margin-left: 80px;
+            margin-bottom: 50px;
+        }
+
+        .gridcard {
+            position: absolute;
+            background-color: #123c6400;
+            overflow: hidden;
+            transition: .35s ease;
+            text-align: center;
+            height: 90px;
+            width: 220px;
+            top: 40px;
+            bottom: 45px;
+            left: 75px;
+            right: -10px;
+            padding-top: 60px;
+            color: rgba(0, 0, 0, 0);
+        }
+
+        .bigridcardbutton {
+            font-size: 30px;
+            padding: 0px 5px 0px 5px;
+            border-radius: 5px;
+            background-color: rgba(255, 0, 0, 0);
+            cursor: pointer;
+
+        }
+
+        .image:hover .bigridcardbutton {
+            background-color: #ffe043;
+            transition: 0.01s ease;
+            margin-top: 40px;
+            color: #002f5b;
+        }
+
+        .image1:hover .bigridcardbutton {
+            background-color: #ffe043;
+            transition: 0.01s ease;
+            margin-top: 40px;
+            color: #002f5b;
+        }
+
+        .image2:hover .bigridcardbutton {
+            background-color: #ffe043;
+            transition: 0.01s ease;
+            margin-top: 40px;
+            color: #002f5b;
+        }
+
+        .image3:hover .bigridcardbutton {
+            background-color: #ffe043;
+            transition: 0.01s ease;
+            margin-top: 40px;
+            color: #002f5b;
+        }
+
+        .image4:hover .bigridcardbutton {
+            background-color: #ffe043;
+            transition: 0.01s ease;
+            margin-top: 40px;
+            color: #002f5b;
+        }
+
+        .image5:hover .bigridcardbutton {
+            background-color: #ffe043;
+            transition: 0.01s ease;
+            margin-top: 40px;
+            color: #002f5b;
+        }
+
+        .image:hover .gridcard {
+            transform: scale(1.48, 1.52);
+            height: 90px;
+            width: 250px;
+            background-color: #123c64c7;
+            transform-origin: 155px;
+        }
+
+        .image1:hover .gridcard1 {
+            transform: scale(1.48, 1.52);
+            height: 90px;
+            width: 250px;
+            background-color: #123c64c7;
+            transform-origin: 155px;
+        }
+
+        .image2:hover .gridcard2 {
+            transform: scale(1.48, 1.52);
+            height: 90px;
+            width: 250px;
+            background-color: #123c64c7;
+            transform-origin: 155px;
+        }
+
+        .image3:hover .gridcard3 {
+            transform: scale(1.48, 1.52);
+            height: 90px;
+            width: 250px;
+            background-color: #123c64c7;
+            transform-origin: 155px;
+        }
+
+        .image4:hover .gridcard4 {
+            transform: scale(1.48, 1.52);
+            height: 90px;
+            width: 250px;
+            background-color: #123c64c7;
+            transform-origin: 155px;
+        }
+
+        .image5:hover .gridcard5 {
+            transform: scale(1.48, 1.52);
+            height: 90px;
+            width: 250px;
+            background-color: #123c64c7;
+            transform-origin: 155px;
+        }
+
+        .gridcard1 {
+            position: absolute;
+            background-color: #123c6400;
+            overflow: hidden;
+            transition: .35s ease;
+            text-align: center;
+            height: 90px;
+            width: 220px;
+            top: 40px;
+            bottom: 45px;
+            left: 75px;
+            right: -10px;
+            padding-top: 60px;
+            color: rgba(0, 0, 0, 0);
+        }
+
+        .gridcard2 {
+            position: absolute;
+            background-color: #123c6400;
+            overflow: hidden;
+            transition: .35s ease;
+            text-align: center;
+            height: 90px;
+            width: 220px;
+            top: 40px;
+            bottom: 45px;
+            left: 75px;
+            right: -10px;
+            padding-top: 60px;
+            color: rgba(0, 0, 0, 0);
+
+        }
+
+        .gridcard3 {
+            position: absolute;
+            background-color: #123c6400;
+            overflow: hidden;
+            transition: .35s ease;
+            text-align: center;
+            height: 90px;
+            width: 220px;
+            top: 40px;
+            bottom: 45px;
+            left: 75px;
+            right: -10px;
+            padding-top: 60px;
+            color: rgba(0, 0, 0, 0);
+
+        }
+
+        .gridcard4 {
+            position: absolute;
+            background-color: #123c6400;
+            overflow: hidden;
+            transition: .35s ease;
+            text-align: center;
+            height: 90px;
+            width: 220px;
+            top: 40px;
+            bottom: 45px;
+            left: 75px;
+            right: -10px;
+            padding-top: 60px;
+            color: rgba(0, 0, 0, 0);
+
+        }
+
+        .gridcard5 {
+            position: absolute;
+            background-color: #123c6400;
+            overflow: hidden;
+            transition: .35s ease;
+            text-align: center;
+            height: 90px;
+            width: 220px;
+            top: 40px;
+            bottom: 45px;
+            left: 75px;
+            right: -10px;
+            padding-top: 60px;
+            color: rgba(0, 0, 0, 0);
+
+        }
+
+        .gridcard6 {
+            position: absolute;
+            background-color: #123c6400;
+            overflow: hidden;
+            transition: .35s ease;
+            text-align: center;
+            height: 90px;
+            width: 220px;
+            top: 40px;
+            bottom: 45px;
+            left: 75px;
+            right: -10px;
+            padding-top: 60px;
+            color: rgba(0, 0, 0, 0);
+
+        }
+
+        .image {
+            background-image: url('investment.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        h4 {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 30px;
+            margin-bottom: 0px;
+            color: #123c64;
+        }
+
+        .grid2 {
+            display: grid;
+            grid-template-columns: 370px;
+            grid-template-rows: 230px 260px;
+            grid-template-areas: "image1" "text";
+            margin-left: 40px;
+            margin-bottom: 50px;
+        }
+
+        .image1 {
+            background-image: url('accounting.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+
+        }
+
+        .grid3 {
+            display: grid;
+            grid-template-columns: 370px;
+            grid-template-rows: 230px 260px;
+            grid-template-areas: "image" "text";
+            margin-left: 40px;
+            margin-bottom: 50px;
+        }
+
+        .image2 {
+            background-image: url('company.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+
+        }
+
+        .grid4 {
+            display: grid;
+            grid-template-columns: 370px;
+            grid-template-rows: 230px 260px;
+            grid-template-areas: "image" "text";
+            margin-left: 80px;
+            margin-bottom: 120px;
+        }
+
+        .image3 {
+            background-image: url('reg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+
+        }
+
+        .grid5 {
+            display: grid;
+            grid-template-columns: 370px;
+            grid-template-rows: 230px 260px;
+            grid-template-areas: "image" "text";
+            margin-left: 50px;
+            margin-bottom: 120px;
+        }
+
+        .image4 {
+            background-image: url('tax.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+
+        }
+
+        .grid6 {
+            display: grid;
+            grid-template-columns: 370px;
+            grid-template-rows: 230px 260px;
+            grid-template-areas: "image" "text";
+            margin-left: 50px;
+            margin-bottom: 120px;
+        }
+
+        .image5 {
+            background-image: url('download.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+
+        }
+
+        .special {
+            display: flex;
+            padding-top: 50px;
+            flex-wrap: wrap;
+
+        }
+
+        article {
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 30px;
+            color: grey;
+            line-height: 1.8;
+        }
+
+        .lineee {
+            width: 35px;
+            height: 5px;
+            background-color: #fcd315;
+            border-radius: 15px;
+            margin-top: 6px;
+        }
+
+        .Specialistin {
+            width: 100%;
+            height: 1200px;
+            padding-top: 50px;
+            background-color: white;
+
+        }
+
+        .Specialist {
+            width: 100%;
+            font-size: 40px;
+            text-align: center;
+            color: #002f5b;
+            margin-bottom: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+        }
+
+        .lineeee {
+            width: 60px;
+            height: 10px;
+            background-color: #fcd315;
+            border-radius: 15px;
+            margin: auto;
+        }
+
+        .why {
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            padding-top: 60px;
+            background-color: #123c648a;
+        }
+
+        .why1 {
+            font-size: 40px;
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            opacity: 1;
+            letter-spacing: 2px;
+        }
+
+        a {
+            color: #fcd315;
+        }
+
+        .phonebox {
+            width: 100%;
+            height: 700px;
+            background-color: white;
+        }
+
+        .phoneboxchild {
+            width: 87%;
+            height: 670px;
+            background-color: white;
+            display: flex;
+            gap: 10px;
+            padding: 20px 20px 0px 20px;
+            margin: auto;
+        }
+
+        .phone {
+            width: 250px;
+            height: 500px;
+            background-image: url('phone.png');
+            margin: auto;
+            margin-right: 60px;
+            z-index: 10;
+        }
+
+        .pros {
+            background-color: antiquewhite;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 400px;
+            grid-template-rows: 170px 170px 170px;
+            grid-template-areas: "textt" "texttt" "textttt";
+        }
+
+        .textt {
+            background-color: white;
+
+        }
+
+        .logoom {
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 50px;
+        }
+
+        .phonetext11 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            font-weight: 800;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            color: #002f5b;
+            cursor: pointer;
+        }
+
+        .phonetext11:hover {
+            color: #fbd312;
+            transition: 0.4s;
+        }
+
+        .phonetext22 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: grey;
+            font-weight: 500;
+        }
+
+        .texttt {
+            background-color: white;
+        }
+
+        .textttt {
+            background-color: white;
+        }
+
+        .pros1 {
+            background-color: aqua;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 400px;
+            grid-template-rows: 170px 170px 170px;
+        }
+
+        .phoneback {
+            width: 220px;
+            height: 372px;
+            border-radius: 23px;
+            background-color: #123c64;
+            margin: 14px 0px 0px 15px;
+            z-index: 1;
+            padding-top: 100px;
+
+        }
+
+        .phonetext {
+            width: 170px;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 70px;
+            color: white;
+            margin: 0px 0px 0px 30px;
+
+        }
+
+        .phonetext1 {
+            width: 160px;
+            height: 90px;
+            color: white;
+            margin: 0px 0px 0px 30px;
+
+        }
+
+        .phonetext3 {
+            width: 135px;
+            font-size: 14px;
+            text-align: center;
+            background-color: #fbd312;
+            padding: 10px;
+            border-radius: 6px;
+            margin: 10px 0px 0px 30px;
+            color: #123c64;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .phonetext3:hover{
+            background-color: #d3ad06;
+            transition: 0.3s ease;
+        }
+
+        b {
+            color: #fbd312;
+        }
+
+        .accounting {
+            background-color: rgb(233, 233, 233);
+            width: 100%;
+            height: 520px;
+        }
+
+        .accounting1 {
+            display: flex;
+            width: 85%;
+            height: 470px;
+            margin: auto;
+            padding-top: 40px;
+        }
+
+        .textaccounting {
+            display: grid;
+            grid-template-columns: 650px;
+            grid-template-rows: 170px 290px;
+            grid-template-areas: "texxt" "imagge";
+        }
+
+        .texxt {
+            font-size: 40px;
+            font-weight: 1000;
+            font-family: 'Roboto', sans-serif;
+            color: #123c64;
+        }
+
+        .linee {
+            width: 50px;
+            height: 10px;
+            background-color: #fcd315;
+            border-radius: 15px;
+            margin-top: 6px;
+        }
+
+        .imageaccounting {
+            display: grid;
+            grid-template-columns: 500px;
+            grid-template-rows: 300px;
+            grid-template-areas: "imaggge";
+            padding-top: 10px;
+        }
+
+        .timesaving {
+            width: 400px;
+            color: #002f5b;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 800;
+            margin-bottom: 0px;
+            margin-top: 30px;
+            display: block;
+        }
+
+        .line {
+            background-color: #123c64;
+            width: 500px;
+            height: 5px;
+            display: inline-block;
+            animation-name: line;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes line {
+            from {
+                width: 0px;
+                height: 5px;
+            }
+
+            to {
+                width: 500px;
+                height: 5px;
+            }
+        }
+
+        .line2 {
+            background-color: #123c64;
+            width: 540px;
+            height: 5px;
+            display: inline-block;
+            animation-name: line2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes line2 {
+            from {
+                width: 0px;
+                height: 5px;
+            }
+
+            to {
+                width: 540px;
+                height: 5px;
+            }
+        }
+
+        .line3 {
+            background-color: #123c64;
+            width: 580px;
+            height: 5px;
+            display: inline-block;
+            animation-name: line3;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes line3 {
+            from {
+                width: 0px;
+                height: 5px;
+            }
+
+            to {
+                width: 580px;
+                height: 5px;
+            }
+        }
+
+        .circle {
+            background-color: #fbd312;
+            display: inline-block;
+            padding: 10px 10px 10px 10px;
+            border-radius: 100px;
+            text-align: center;
+            height: 23px;
+            width: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .services {
+            background-color: white;
+            width: 100%;
+            height: 700px;
+            padding-top: 80px;
+        }
+
+        .headerservices {
+            width: 100%;
+            height: 45px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .headerservices ul li {
+            display: inline-block;
+            list-style: none;
+            margin-right: 10px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 12px;
+            border-radius: 5px;
+            color: #123c64;
+            cursor: pointer;
+        }
+
+        .headerservices ul li:hover {
+            background-color: #fcd315;
+            transition: 0.2s;
+        }
+
+        .boxservices {
+            width: 100%;
+            height: 450px;
+            margin-top: 40px;
+
+        }
+
+        .boxservices1 {
+            width: 1230px;
+            height: 420px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        .bs1 {
+            display: grid;
+            width: 300px;
+            height: 200px;
+            grid-template-areas: "imgservices";
+            margin-right: 10px;
+            position: relative;
+        }
+
+        .card {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #123c6400;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .3s ease;
+            text-align: center;
+        }
+
+        .bs1:hover .card {
+            height: 100%;
+            background-color: #123c64;
+
+        }
+
+        .bs2:hover .card {
+            height: 100%;
+            background-color: #123c64;
+
+        }
+
+        .bs3:hover .card {
+            height: 100%;
+            background-color: #123c64;
+
+        }
+
+        .bs4:hover .card {
+            height: 100%;
+            background-color: #123c64;
+
+        }
+
+        .bs5:hover .card {
+            height: 100%;
+            background-color: #123c64;
+
+        }
+
+        .bs6:hover .card {
+            height: 100%;
+            background-color: #123c64;
+
+        }
+
+        .bs7:hover .card {
+            height: 100%;
+            background-color: #123c64;
+
+        }
+
+        .bs8:hover .card {
+            height: 100%;
+            background-color: #123c64;
+
+        }
+
+        .partnership {
+            font-size: 23px;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            margin-top: 70px;
+
+        }
+
+        .firm {
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .bs2 {
+            display: grid;
+            width: 300px;
+            height: 200px;
+            grid-template-areas: "imgservices";
+            margin-right: 10px;
+            position: relative;
+        }
+
+        .bs3 {
+            display: grid;
+            width: 300px;
+            height: 200px;
+            grid-template-areas: "imgservices";
+            margin-right: 10px;
+            position: relative;
+
+        }
+
+        .bs4 {
+            display: grid;
+            width: 300px;
+            height: 200px;
+            grid-template-areas: "imgservices";
+            position: relative;
+
+        }
+
+        .bs5 {
+            display: grid;
+            width: 300px;
+            height: 200px;
+            grid-template-areas: "imgservices";
+            margin-right: 10px;
+            position: relative;
+
+        }
+
+        .bs6 {
+            display: grid;
+            width: 300px;
+            height: 200px;
+            grid-template-areas: "imgservices";
+            margin-right: 10px;
+            position: relative;
+
+        }
+
+        .bs7 {
+            display: grid;
+            width: 300px;
+            height: 200px;
+            grid-template-areas: "imgservices";
+            margin-right: 10px;
+            position: relative;
+
+        }
+
+        .bs8 {
+            display: grid;
+            width: 300px;
+            height: 200px;
+            grid-template-areas: "imgservices";
+            position: relative;
+
+        }
+
+        .signature {
+            width: 100%;
+            height: 160px;
+            background-image: url(namee.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .foorm {
+            background-color: #123c64e5;
+            width: 100%;
+            height: 380px;
+            padding-top: 50px;
+        }
+
+        .bookfree {
+            background-color: rgba(0, 0, 255, 0);
+            width: 530px;
+            height: 170px;
+            font-size: 44px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 2px;
+            float: left;
+            color: white;
+        }
+
+        .foorm1 {
+            background-color: rgba(255, 0, 255, 0);
+            width: 82%;
+            height: 380px;
+            margin: auto;
+        }
+
+        .form {
+            background-color: rgba(152, 251, 152, 0);
+            width: 550px;
+            height: 140px;
+            padding: 30px 30px 30px 0px;
+            margin-top: 10px;
+            float: left;
+            color: white;
+        }
+
+        #username {
+            padding: 15px;
+            width: 220px;
+            height: 15px;
+            border-radius: 70px;
+            border: 2px solid white;
+            margin-bottom: 30px;
+            margin-right: 20px;
+            font-style: italic;
+            background-color: rgba(255, 0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        #email {
+            padding: 15px;
+            width: 220px;
+            height: 15px;
+            border-radius: 70px;
+            border: 2px solid white;
+            font-style: italic;
+            background-color: rgba(255, 0, 0, 0);
+            color: white;
+        }
+
+        #number {
+            padding: 15px;
+            width: 220px;
+            height: 15px;
+            border-radius: 70px;
+            border: 2px solid white;
+            margin-right: 20px;
+            font-style: italic;
+            background-color: rgba(255, 0, 0, 0);
+            color: white;
+        }
+
+        #submit {
+            padding: 10px;
+            width: 250px;
+            height: 45px;
+            border-radius: 70px;
+            border: 1px solid rgba(0, 0, 0, 0);
+            font-size: 20px;
+            background-color: #fdd415;
+            color: #123c64;
+            cursor: pointer;
+        }
+
+        .manimage {
+            float: right;
+            margin-top: -12px;
+        }
+
+        .request {
+            background-color: #002f5b;
+            width: 100%;
+            height: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+           
+        }
+
+        .map {
+            display: grid;
+            grid-template-columns: 400px;
+            grid-template-rows: 230px 160px 200px;
+            grid-template-areas: "maap" "aboutmap" "info";
+            background-color: rgba(255, 0, 0, 0.007);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 26px;
+            margin-right: 50px;
+        }
+        .request .aboutmap {
+            color: white;
+
+        }
+        .request .info {
+            background-color: rgba(0, 204, 255, 0);
+        }
+        .yellowcall {
+            display: block;
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .yellowemail {
+            display: block;
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .yellowhome {
+            display: inline-block;
+            width: 60%;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .biyellow {
+            color: #fdd415;
+            margin-right: 20px;
+        }
+
+        .yellowhometext {
+            float: left;
+            width: 200px;
+            height: 127px;
+        }
+        .link {
+            display: grid;
+            grid-template-columns: 200px;
+            grid-template-rows: 250px 340px;
+            grid-template-areas: "linkk" "supportt";
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 26px;
+        }
+        .linkk ul li {
+           list-style: none;
+           color: white;
+           margin-top: 2px;
+        
+        }
+        .linkk ul {
+            margin-top: 10px;
+        }
+        .bilink {
+            color: #fdd415;
+            font-size: 10px;
+            margin-right: 10px;
+        }
+        .linkktext {
+            color: white;
+            font-weight: 600;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        .supporttext {
+            color: white;
+            font-weight: 600;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        .supportlist ul li {
+            list-style: none;
+           color: white;
+           margin-top: 2px;
+        }
+        .callll {
+            display: grid;
+            grid-template-columns: 500px;
+            grid-template-rows: 250px 340px;
+            grid-template-areas: "calltext" "callsubmit";
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 26px;
+            margin-left: 50px;
+        }
+        .calltext {
+            background-color: rgba(255, 0, 0, 0);
+        }
+        .calllltext {
+            font-size: 40px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 800;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: white;
+        }
+        .calllllinfo {
+            color: white;
+            margin-top: 10px;
+            line-height: 40px;
+        }
+        .callsubmit {
+            color: grey;   
+        }
+        #usernamee {
+            width: 490px;
+            height: 35px;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-top: 7px;
+        }
+        #submitt {
+            padding: 10px 20px 10px 20px;
+            border-radius: 7px;
+            border: 1px solid rgba(0, 0, 0, 0);
+            color: #123c64;
+            font-weight: 600;
+            background-color: rgb(0, 140, 255);
+        }
+        footer {
+            width: 100%;
+            height: 40px;
+            background-color: #00152a;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 30px;
+        }
+        .footerr {
+            color: #848fa7;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="date">
+        <div class="call"><i class="bi1 bi-telephone-fill"></i></div>
+        <div class="p">Phone: +91-9999196162 l +91-9999199651</div>
+        <div class="date1"><i class="bi2 bi-clock-fill"></i>Mon -Sat: 9 am -7 pm</div>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="profit.png" width="140" alt="profit fusion india">
+        </div>
+        <div class="icon">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-mic-fill"></i>
+        </div>
+        <div class="search">
+            <i class="bi bi-search"></i>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>Services
+                <div class="hoi">
+                    <div class="lliinnee"></div>
+                    <ul>
+                        <li>Company Formation</li>
+                        <li>Registration</li>
+                        <li>Taxtaion</li>
+                        <li>Accounting </li>
+                        <li>Stock market</li>
+                        <li>Financial Planning</li>
+                    </ul>
+                </div>
+            </li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+    <div class="board">
+        <div class="text">
+            <h1>Lets start New journey click here and enjoy</h1>
+            <h2>Start Now</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus laudantium reiciendis beatae
+                architecto sequi omnis!</p>
+            <div class="button1">About Us<i class="bi bi-caret-right-fill"></i></div>
+            <div class="button2">Our History<i class="bi bi-caret-right-fill"></i></div>
+        </div>
+    </div>
+    <div class="mmain">
+        <div class="m1">
+            <div class="welcome">Welcome to Profit Fusion Iindia</div>
+            <div class="lineeee"></div>
+            <p class="m">Profit Fusion India is one of the leading professional service provisioners in the Accountancy
+                &
+                Financial domain. We are a team of proficient & highly experienced professionals ready to provide
+                assistance
+                in company formation, taxation, bookkeeping, tally customization and bank reconciliation. We provide
+                unmatched & consistent facilitation to our clients to ensure smooth functioning and a hassle free
+                experience.</p>
+        </div>
+    </div>
+    <div class="Specialistin">
+        <h1 class="Specialist">Specialist In</h1>
+        <div class="lineeee"></div>
+        <div class="special">
+
+            <div class="grid">
+                <div class="image">
+                    <div class="gridcard">
+                        <i class="bigridcardbutton bi-arrow-right-short"></i>
+                    </div>
+                </div>
+                <div class="text1">
+                    <h4>Stock Market</h4>
+                    <div class="lineee"></div>
+                    <article> Become a successful trader by learning fundamental and technical skills.</article>
+                </div>
+            </div>
+            <div class="grid2">
+                <div class="image1">
+                    <div class="gridcard1"><i class="bigridcardbutton bi-arrow-right-short"></i></div>
+                </div>
+                <div class="text1">
+                    <h4>Accounting</h4>
+                    <div class="lineee"></div>
+                    <article> Accumulate your accounting records and track financial activity for auditing, bookkeeping
+                        & reconciliation.</article>
+                </div>
+            </div>
+            <div class="grid3">
+                <div class="image2">
+                    <div class="gridcard2"><i class="bigridcardbutton bi-arrow-right-short"></i></div>
+                </div>
+                <div class="text1">
+                    <h4>Company Formation</h4>
+                    <div class="lineee"></div>
+                    <article> Register your business to obtain legal existence & accession of documents to incorporate
+                        the company.</article>
+                </div>
+            </div>
+            <div class="grid4">
+                <div class="image3">
+                    <div class="gridcard3"><i class="bigridcardbutton bi-arrow-right-short"></i></div>
+                </div>
+                <div class="text1">
+                    <h4>Registration</h4>
+                    <div class="lineee"></div>
+                    <article> Get MSME, Patent & GST registration to accredit you to outset your business operations
+                        smoothly.</article>
+                </div>
+            </div>
+            <div class="grid5">
+                <div class="image4">
+                    <div class="gridcard4"><i class="bigridcardbutton bi-arrow-right-short"></i></div>
+                </div>
+                <div class="text1">
+                    <h4>Taxation</h4>
+                    <div class="lineee"></div>
+                    <article>Get assistance in tax compliance & filing including withholding of GST, TDS & Income tax.
+                    </article>
+                </div>
+            </div>
+            <div class="grid6">
+                <div class="image5">
+                    <div class="gridcard5"><i class="bigridcardbutton bi-arrow-right-short"></i></div>
+                </div>
+                <div class="text1">
+                    <h4>Financial Planning</h4>
+                    <div class="lineee"></div>
+                    <article> Analyzing financial plans with formation of explicit strategies to maintain your
+                        capitalization.</article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="why">
+        <h1 class="why1">Why Choose <a> Profit Fusion India </a> </h1>
+    </div>
+    <div class="phonebox">
+        <div class="phoneboxchild">
+            <div class="phone">
+                <div class="phoneback">
+                    <h1 class="phonetext">Schedule A <b> Call</b> </h1>
+                    <p class="phonetext1"><i>With An Expert Or Talk To An Expert Right Now!</i></p>
+                    <div class="phonetext3">Request a call Back</div>
+                </div>
+
+            </div>
+            <div class="pros">
+                <div class="textt">
+                    <div class="logoom"><img src="z.jpg" width="100px" alt=""></div>
+                    <div class="phonetext11">Professional Service</div>
+                    <div class="phonetext22">Well qualified & accomplished team comprising proficient accountants and
+                        stock market experts.</div>
+                </div>
+                <div class="texttt">
+                    <div class="logoom"><img src="zz.jpg" width="100px" alt=""></div>
+                    <div class="phonetext11">Quality</div>
+                    <div class="phonetext22">Well qualified & accomplished team comprising proficient accountants and
+                        stock market experts.
+                    </div>
+                </div>
+                <div class="textttt">
+                    <div class="logoom"><img src="zzz.jpg" width="100px" alt=""></div>
+                    <div class="phonetext11">Affordable</div>
+                    <div class="phonetext22">Well qualified & accomplished team comprising proficient accountants and
+                        stock market experts.</div>
+                </div>
+            </div>
+            <div class="pros1">
+                <div class="textt">
+                    <div class="logoom"><img src="zzzz.jpg" width="100px" alt=""></div>
+                    <div class="phonetext11">Data Security</div>
+                    <div class="phonetext22">Well qualified & accomplished team comprising proficient accountants and
+                        stock market experts.</div>
+                </div>
+                <div class="texttt">
+                    <div class="logoom"><img src="zzzzz.jpg" width="100px" alt=""></div>
+                    <div class="phonetext11">Hassle Free</div>
+                    <div class="phonetext22">Well qualified & accomplished team comprising proficient accountants and
+                        stock market experts.</div>
+                </div>
+                <div class="textttt">
+                    <div class="logoom"><img src="zzzzzz.jpg" width="100px" alt=""></div>
+                    <div class="phonetext11">Trusted Service</div>
+                    <div class="phonetext22">Well qualified & accomplished team comprising proficient accountants and
+                        stock market experts.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accounting">
+        <div class="accounting1">
+            <div class="textaccounting">
+                <div class="texxt">
+                    Accounting and Stock Market Services That Save Your Time, Money and Frustration.
+                    <div class="linee"></div>
+                </div>
+                <div class="imagge">
+                    <div class="timesaving">Time Saving</div>
+                    <div class="line"></div>
+                    <div class="circle">85%</div>
+                    <div class="timesaving">Success rate</div>
+                    <div class="line2"></div>
+                    <div class="circle">90%</div>
+                    <div class="timesaving">Customer satisfaction</div>
+                    <div class="line3"></div>
+                    <div class="circle">99%</div>
+                </div>
+            </div>
+            <div class="imageaccounting">
+                <div class="imaggge"><img src="thumsup.jpg" width="498x" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <div class="Specialist">Our Services</div>
+        <div class="lineeee"></div>
+        <div class="headerservices">
+            <ul>
+                <li>All</li>
+                <li>Company Formatoin</li>
+                <li>registration</li>
+                <li>Taxation</li>
+                <li>Acoounting</li>
+                <li>Stock Market</li>
+                <li>Financial Planning</li>
+            </ul>
+        </div>
+        <div class="boxservices">
+            <div class="boxservices1">
+                <div class="bs1">
+                    <img src="part.png" width="300px" height="200" alt="">
+                    <div class="card">
+                        <div class="partnership">PARTNERSHIP</div>
+                        <div class="firm">Firm</div>
+                    </div>
+                </div>
+                <div class="bs2"><img src="part1.png" width="300px" height="200" alt="">
+                    <div class="card">
+                        <div class="partnership">ONE PERSON COMPANY</div>
+                        <div class="firm">Formation</div>
+                    </div>
+                </div>
+                <div class="bs3"><img src="part2.jpg" width="300px" height="200" alt="">
+                    <div class="card">
+                        <div class="partnership">MSME</div>
+                        <div class="firm">Registration</div>
+                    </div>
+                </div>
+                <div class="bs4"><img src="part3.jpg" width="300px" height="200" alt="">
+                    <div class="card">
+                        <div class="partnership">IMPORT EXPORT</div>
+                        <div class="firm">Code</div>
+                    </div>
+                </div>
+                <div class="bs5"><img src="part4.jpg" width="300px" height="200" alt="">
+                    <div class="card">
+                        <div class="partnership">GOOD & SERVICE TAX</div>
+                        <div class="firm">Return</div>
+                    </div>
+                </div>
+                <div class="bs6"><img src="part5.jpg" width="300px" height="200" alt="">
+                    <div class="card">
+                        <div class="partnership">INCOME TAX RETURN</div>
+                        <div class="firm">Filling</div>
+                    </div>
+                </div>
+                <div class="bs7"><img src="part6.jpg" width="300px" height="200" alt="">
+                    <div class="card">
+                        <div class="partnership">GST ANNUAL</div>
+                        <div class="firm">Return</div>
+                    </div>
+                </div>
+                <div class="bs8"><img src="part7.jpg" width="300px" height="200" alt="">
+                    <div class="card">
+                        <div class="partnership">PRIVATE LIMITED</div>
+                        <div class="firm">Registration</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="signature"></div>
+    <div class="foorm">
+        <div class="foorm1">
+            <div class="bookfree">Book a Free Consultancy
+                to get our Valuable Services.
+                <div class="linee"></div>
+            </div>
+            <div class="manimage"><img src="man1.png" width="400px" alt=""></div>
+            <div class="form">
+                <form action="">
+                    <input type="username" id="username" placeholder="Full Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="number" id="number" placeholder="Phone no">
+                    <input type="submit" id="submit" placeholder="Submit">
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="request">
+        <div class="map">
+            <div class="maap"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.9789213245904!2d77.25589851508055!3d28.54035328245422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e03d0980bf%3A0x14a040af40837be6!2sProfit%20Fusion%20India!5e0!3m2!1sen!2sin!4v1686145043851!5m2!1sen!2sin"
+                    width="400" height="230" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="aboutmap">Profit Fusion India is an Accountancy Solution Firm, based in Delhi. We are a team of
+                highly experienced professionals—having years of experience in the industry—assisted by a team of
+                dedicated professionals.</div>
+            <div class="info">
+                <div class="infotext">
+                    <div class="yellowcall"> <i class="biyellow bi-telephone-fill"></i> +91-9999196162 </div>
+                    <div class="yellowemail"> <i class="biyellow bi-envelope-fill"></i> info@profitfusionindia.com
+                    </div>
+                    <div class="yellowhome"> <i class="biyellow bi-house-fill"></i>
+                        <div class="yellowhometext"> 80, 2nd Floor, 1st Main Road, oops Big Bazaar, Santrupthi Nagr, JP
+                            Nagar 7th Phase, Bangalore, Karnataka - 560078 </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="link">
+            <div class="linkk">
+                <div class="linkktext">LINKS</div>
+                <div class="lineee"></div>
+                <div class="linkList">
+                    <ul>
+                        <li><i class="bilink bi-chevron-right"></i>Home</li>
+                        <li><i class="bilink bi-chevron-right"></i>Service</li>
+                        <li><i class="bilink bi-chevron-right"></i>About Us</li>
+                        <li><i class="bilink bi-chevron-right"></i>Testimonals</li>
+                        <li><i class="bilink bi-chevron-right"></i>News</li>
+                        <li><i class="bilink bi-chevron-right"></i>Contacts</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="supportt">
+                <div class="supporttext">SUPPORT</div>
+                <div class="lineee"></div>
+                <div class="supportlist">
+                    <ul>
+                        <li>Contact Us</li>
+                           <li>Submit a Ticket</li> 
+                            <li>Visit Knowledge Base</li> 
+                            <li>Terms & condition</li>
+                            <li> Refund Policy </li>
+                         <li>Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="callll">
+            <div class="calltext">
+                <div class="calllltext">Request a call back</div>
+                <div class="linee"></div>
+                <div class="calllllinfo">Get In Touch & Improve The Financial Health of Your Business
+
+                    Accounting and finance services done right the first time…and every time after.</div>
+            </div>
+            <div class="callsubmit">
+                <div class="forrm">
+                    <form action="">
+                        <label for="Namee">Name</label><br>
+                        <input type="username" id="usernamee" placeholder="Enter Your Name"><br>
+                        <label for="Namee">Email</label><br>
+                        <input type="email" id="usernamee" placeholder="Enter Your Email"><br>
+                        <label for="Namee">Mobile</label><br>
+                        <input type="tel" id="usernamee" placeholder="Enter Your Mobile"><br>
+                        <input type="radio" id="radioo">
+                        <label for="Remember me">Remember me</label><br>
+                        <input type="submit" id="submitt">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerr">Profitfusionindia © 2023 </div>
+    </footer>
+</body>
+
+</html>
